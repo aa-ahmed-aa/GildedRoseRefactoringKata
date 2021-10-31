@@ -96,9 +96,9 @@ class GildedRoseTest extends TestCase
 
         array_map(function () use ($gildedRose) {
             $gildedRose->updateQuality();
-        }, range(1, 3));
+        }, range(1, 5));
 
-        $this->assetForIndex(1, "Aged Brie", -1, 4);
+        $this->assetForIndex(1, "Aged Brie", -3, 8);
     }
 
     public function test_aged_brie_item_after_10_day()
